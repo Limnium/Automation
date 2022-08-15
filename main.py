@@ -60,7 +60,7 @@ def main(laravel_session):  # 参数为cookie里的laravel_session 自行抓包�
     if res["status"] == 1 and res["message"] == "操作成功":
         print("青年大学习已完成")
     else:
-        print("error")
+        raise Exception('Failed')
 
 if __name__ == '__main__':
     laravel_session = os.environ["DXX_LARAVEL_SESSION"] # 自行抓包获取40位的laravel_session并存放至repo的Secrets中，命名为DXX_LARAVEL_SESSION

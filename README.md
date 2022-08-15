@@ -58,5 +58,5 @@
 
 # 2022/08/15更新
 ### 部署至Github Actions，除7、8月，每周日10点自动完成青年大学习
-新增.github/workflows/JSQNDXX.yml
-更改laravel_session传入方式，通过Github Secrets传入，请命名为DXX_LARAVEL_SESSION
+- 新增.github/workflows/JSQNDXX.yml
+- 更改laravel_session传入方式，通过Github Secrets传入，请命名为DXX_LARAVEL_SESSION

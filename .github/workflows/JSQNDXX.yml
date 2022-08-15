@@ -2,7 +2,7 @@ name: 'JSQNDXX'
 
 on:
   schedule:
-    - cron:  '0 2 * 1-6,9-12 0'
+    - cron:  '12 22 * 1-6,9-12 0'
 
 jobs:
   JSQNDXX:

@@ -2,7 +2,7 @@ name: 'Bili'
 
 on:
   schedule:
-    - cron: '6 11 * * *'
+    - cron: '08 11 * * *'
 
 jobs:
   Bili:

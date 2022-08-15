@@ -8,4 +8,4 @@
 - 新增.github/workflows/JSQNDXX.yml
 - 更改laravel_session传入方式，通过Github Secrets传入，请命名为DXX_LARAVEL_SESSION
 
---注意：--laravel_session每9天更新，每60天激活一次GitHub Actions
+__注意：__ laravel_session每9天更新，每60天激活一次GitHub Actions

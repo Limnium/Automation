@@ -57,6 +57,6 @@
 ### 创作不易 希望能得到您一颗小星星⭐️ 十分感谢
 
 # 2022/08/15更新
-### 部署至Github Actions，除7、8月，每周日10点自动完成青年大学习
+### 部署至Github Actions，除7、8月，每周日08:03(北京时间)自动完成青年大学习
 - 新增.github/workflows/JSQNDXX.yml
 - 更改laravel_session传入方式，通过Github Secrets传入，请命名为DXX_LARAVEL_SESSION

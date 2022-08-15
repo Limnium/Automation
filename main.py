@@ -43,7 +43,6 @@ def main(laravel_session):  # 参数为cookie里的laravel_session 自行抓包�
         # print(info_soup.get_text())
         item = info_soup.get_text()  # 用户信息
         # print(item[:4],item[5:])
-        dict[item[:4]] = item[5:]
     token = re.findall(r'var token ?= ?"(.*?)"', login.text)  # 获取js里的token
     lesson_id = re.findall(r"'lesson_id':(.*)", login.text)  # 获取js里的token
     # print("token:%s"%token[0])

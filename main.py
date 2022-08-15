@@ -37,8 +37,6 @@ def main(laravel_session):  # 参数为cookie里的laravel_session 自行抓包�
     userinfo = login_soup.select(".confirm-user-info p")  # 找到用户信息div 课程姓名编号单位
     # print(userinfo)
 
-    dict = {}  # 构建用户信息字典
-
     for i in userinfo:
         # print(i)
         info_soup = BeautifulSoup(str(i), 'html.parser')  # 分布解析课程姓名编号单位信息
@@ -50,10 +48,7 @@ def main(laravel_session):  # 参数为cookie里的laravel_session 自行抓包�
     lesson_id = re.findall(r"'lesson_id':(.*)", login.text)  # 获取js里的token
     # print("token:%s"%token[0])
     # print("lesson_id:%s"%lesson_id[0])
-    dict['token'] = token[0]
-    dict['lesson_id'] = lesson_id[0]
 
-    print(dict)
     confirmurl = "https://service.jiangsugqt.org/youth/lesson/confirm"
     params = {
         "_token": token[0],

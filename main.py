@@ -4,8 +4,11 @@
 @author:yuzai
 @file:main.py
 @time:2022/03/18
+@updated by:Limpu
+@updated time:2022/08/15
 """
 import re
+import os
 import requests
 import urllib3
 from bs4 import BeautifulSoup
@@ -67,5 +70,5 @@ def main(laravel_session):  # 参数为cookie里的laravel_session 自行抓包�
 
 
 if __name__ == '__main__':
-    laravel_session = "8rAucTd84mpMLxilmCjeWO08rbtC7opDnrwosdaa" #自行抓包获取40位的laravel_session
+    laravel_session = os.environ["DXX_LARAVEL_SESSION"] # 自行抓包获取40位的laravel_session并存放至repo的Secrets中，命名为DXX_LARAVEL_SESSION
     main(laravel_session)

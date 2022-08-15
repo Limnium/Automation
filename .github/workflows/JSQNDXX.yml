@@ -8,7 +8,7 @@ on:
       - cron: '0 0 10 ? 9-6 1'
 
 jobs:
-  DXX:
+  JSQNDXX:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout codes'

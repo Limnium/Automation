@@ -19,8 +19,8 @@ jobs:
           python-version: '3.10'
       - name: 'Install dependencies'
         run: |
-          if [ -f requirements.txt ]; then pip install -r requirements.txt;fi
-      - name: 'main'
+          if [ -f requirements.txt ]; then pip install -r JSQNDXX/requirements.txt;fi
+      - name: 'Run codes'
         env:
           DXX_LARAVEL_SESSION: ${{secrets.DXX_LARAVEL_SESSION}}
-        run: python main.py
+        run: python JSQNDXX/main.py

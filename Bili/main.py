@@ -1,4 +1,4 @@
-import requests, re, json, os
+import requests, json, os
 
 if __name__ == '__main__':
     cookie = os.environ["BILI_COOKIE"]

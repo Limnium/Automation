@@ -1,4 +1,4 @@
-import requests, json, os
+import requests, json, os, time
 
 if __name__ == '__main__':
     cookie = os.environ["BILI_COOKIE"]
@@ -11,6 +11,6 @@ if __name__ == '__main__':
     code = rejson['code']
     msg = rejson['message']
     if code == 0:
-        print('登录成功')
+        print(time.strftime("%H:%M:%S", time.localtime())+'登录成功')
     else:
-        raise Exception('哔哩哔哩签到失败')
+        raise Exception(time.strftime("%H:%M:%S", time.localtime())+'哔哩哔哩签到失败')

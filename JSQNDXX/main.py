@@ -40,7 +40,7 @@ def learn_lesson(s, laravel_session, lesson_id):
     res = res.json()  # 返回结果转json
     print("%s: %s" % (lesson_id, res))
     if res["status"] == 1 and res["message"] == "操作成功":
-        pass
+        print('截图：https://qndxx.netlify.app/')
     else:
         print("学习失败")
 

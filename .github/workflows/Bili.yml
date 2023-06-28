@@ -1,11 +1,9 @@
 name: 'Bili'
 
 on:
-  schedule:
-    - cron: '18 17 * * *'
   push:
     branches:
-      - main
+      - null
 
 jobs:
   Bili:
